@@ -1,0 +1,45 @@
+body 
+{
+	background-color:#000000;
+
+	font:1em/1.5 sans-serif;
+}
+
+h1
+{
+	text-align:center;
+	font-size:35px;
+	padding-top:100px;
+	color:white;
+}
+form
+{
+	  margin:20px auto;
+ 	 width:375px;
+ 	 color:black;
+}
+input
+{
+	padding:10px;
+	font-size:inherit;
+}input[type="text"]
+{
+	display:black;
+	margin-bottom:10px;
+	width:345px;
+	border:2px solid black;
+	background:#FAE3AF;
+}
+input[type="submit"]
+{
+	width:125px;
+	height:45px;
+	border:none;
+	background:steelblue;
+	margin-left:125px;
+	color:white;
+}
+input:focus
+{
+	background:white;
+}

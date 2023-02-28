@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title></title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;}
+
+.enter{
+width:500px;
+background-color:rgb(0,0,0,0.8);
+margin:auto;
+color:white;
+padding:10px 0px 10px 0px;
+text-align:center;
+border-radius:15px 15px 0px 0px;
+
+
+}
+.main{
+background-color:rgb(0,0,0,0.5);
+width:500px;
+margin:auto;
+}
+form{
+padding:10px;
+
+}
+#name{
+width:50%;
+height:25px;
+}.name{
+margin-left:25px;
+margin-top:30px;
+width:125px;
+color:white;
+font-size:20px;
+font-weight:500px;
+
+}
+.pregnencies{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.glucose{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.BP{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.Skin_Thickness{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.insulin{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.BMI{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.DPF{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.Age{
+position:relative;
+left:200px;
+top:-25px;
+line-height:25px;
+border-radius:6px;
+padding:0 18px;
+font-size:16px;
+}
+.submit{
+width:125px;
+height:30px;
+border:none;
+background:steelblue;
+margin-left:150px;
+color:white;
+}
+
+</style>
+</head>
+<body background="{{ url_for('static', filename='pulse.jpg') }}" style="background-repeat: no-repeat;background-attachment: fixed;
+  background-size: 100% 100%;"> 
+<form method="post" action="{{ url_for('upload') }}">
+<div class="enter"><h1>Please Enter The Details</h1></div>
+<div class="main">
+<form>
+<div id="name">
+<h2 class="name">pregnencies</h2>
+<input class="pregnencies" type="text" name="pregnencies"><br>
+
+</div>
+<div id="name">
+<h2 class="name">Glucose</h2>
+<input class="glucose" type="text" name="glucose"><br>
+
+</div>
+<div id="name">
+<h2 class="name">BP</h2>
+<input class="BP" type="text" name="blood_pressure"><br>
+
+</div>
+<div id="name">
+<h2 class="name">Skin_Thickness</h2>
+<input class="Skin_Thickness" type="text" name="skin_thickness"><br>
+
+</div>
+<div id="name">
+<h2 class="name">Insulin</h2>
+<input class="insulin" type="text" name="insulin"><br>
+
+</div>
+<div id="name">
+<h2 class="name">BMI</h2>
+<input class="BMI" type="text" name="bmi"><br>
+
+</div>
+<div id="name">
+<h2 class="name">DPF</h2>
+<input class="DPF" type="text" name="dpf"><br>
+
+</div>
+<div id="name">
+<h2 class="name">Age</h2>
+<input class="Age" type="text" name="age"><br>
+
+</div>
+<div id="name">
+<h2 class="name"></h2>
+<input class="submit" type="submit" name="Submit"><br>
+
+</div>
+</div>
+</div>
+</body>
+</html>
