@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-
 <html>
-	<body background="{{ url_for('static', filename='pulse.jpg') }}" style="background-repeat: no-repeat;background-attachment:fixed;
-  background-size: 100% 100%;"> 
-									<br><br><br><br><br><br><h1 align="center" style="font-size:65px;"><font color="white">{{ prediction_text }} </h1>
-								
-
-</body>
+	<body background="{{ url_for('static', filename='pulse.jpg') }}" style="background-repeat: no-repeat;background-attachment:fixed;background-size: 100% 100%;"> 
+		<br><br><br><br><br><br>
+		<h1 align="center" style="font-size:65px;"><font color="white">{{ prediction_text }}</h1>
+		<br><br><br><br><br><br>
+		<h2 align="center"><font color="white">Input Values</h2>
+		<table align="center" style="font-size:25px;color:white">
+			<tr>
+				<td>Pregnancies:</td>
+				<td>{{ pregnencies }}</td>
+			</tr>
+			<tr>
+				<td>Glucose:</td>
+				<td>{{ glucose }}</td>
+			</tr>
+			<tr>
+				<td>Blood Pressure:</td>
+				<td>{{ blood_pressure }}</td>
+			</tr>
+			<tr>
+				<td>Skin Thickness:</td>
+				<td>{{ skin_thickness }}</td>
+			</tr>
+			<tr>
+				<td>Insulin:</td>
+				<td>{{ insulin }}</td>
+			</tr>
+			<tr>
+				<td>BMI:</td>
+				<td>{{ bmi }}</td>
+			</tr>
+			<tr>
+				<td>DPF:</td>
+				<td>{{ dpf }}</td>
+			</tr>
+			<tr>
+				<td>Age:</td>
+				<td>{{ age }}</td>
+			</tr>
+		</table>
+	</body>
 </html>
